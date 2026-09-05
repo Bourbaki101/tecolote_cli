@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "user": {
+    "fullName": "Example Contractor"
+  },
+  "bank": {
+    "bank": "Example Bank",
+    "bankAddress": "100 Example Street, Example City",
+    "accountName": "Example Contractor",
+    "swift": "EXAMPLE1A",
+    "accountNumber": "000000001234",
+    "signaturePath": "/home/example/.config/tecolote/signature.png"
+  },
+  "compensation": {
+    "monthlyCents": 200000,
+    "currency": "USD",
+    "schedule": "monthly"
+  },
+  "client": {
+    "companyName": "Example Client Ltd.",
+    "companyAddress": "Example City, Example Country"
+  },
+  "invoice": {
+    "initialNextNumber": 1,
+    "outputDirectory": "/home/example/Documents/Tecolote/Invoices"
+  }
+}

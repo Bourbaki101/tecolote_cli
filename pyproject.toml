@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tecolote-cli"
+version = "0.1.0"
+description = "Deterministic, agent-friendly invoice generation CLI"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Private" }
+authors = [{ name = "Tecolote CLI contributors" }]
+dependencies = ["reportlab>=4.0,<5"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+tecolote = "tecolote.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

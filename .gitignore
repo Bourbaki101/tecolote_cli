@@ -1,0 +1,37 @@
+# Local/private reference material
+asset/
+
+# Real local configuration, identity, and signatures
+config.json
+config.local.json
+*.private.json
+signature.png
+*.pem
+*.key
+.env
+.env.*
+
+# Generated accounting documents and renderer scratch files
+output/
+Invoices/
+*.pdf
+tmp/
+*.log
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Editors / operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
